@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Vonique64;
+  src: url(../fonts/Vonique64.ttf);
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+h1 {
+  margin: 0;
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#loading {
+  height: 80px;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.container {
+  align-items: center;
+  width: 270px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -135px;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.search, .logo {
+  display: flex;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.logo {
+  bottom: 0;
+}
+
+.search div {
+  flex: 1;
+}
+
+.logo img {
+  flex: 0;
+  margin-left: 8px;
+  margin-top: 4px;
+}
+
+.product-name {
+  font-family: Vonique64;
+  font-size: 27px;
+  line-height: 54px;
+  margin-left: 14px;
+  white-space: nowrap;
+}
+
+.search input {
+  border: solid #666 1px;
+  box-shadow: none;
+  border-radius: 3px;
+  height: 30px;
+  margin-left: 4px;
+  padding: 4px 8px;
+  width: 200px;
+}
+
+.search button {
+  background-color: #dedede;
+  border: solid #666 1px;
+  box-shadow: none;
+  border-radius: 3px;
+  height: 40px;
+  margin-left: 4px;
+  width: 50px;
+}
+
+.container.top {
+  margin-left: -175px;
+  margin-top: 0;
+  top: 10px;
+  height: 56px;
+  width: 350px;
+}
+
+.search.top {
+  margin-right: 6px;
+  margin-top: 10px;
+  right: 0;
+}
+
+.content {
+  background-color: #ffd823;
+  font-family: Vonique64;
+  font-size: 30px;
+  max-height: 80%;
+  left: 50%;
+  list-style: none outside;
+  margin: 80px auto;
+  overflow-y: scroll;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  transition: all 0.5s;
+  transform: translateX(-50%);
+  width: 600px;
+  z-index: -1;
+}
+
+.content li {
+  border-bottom: solid #dea42d;
+  cursor: pointer;
+  height: 40px;
+}
