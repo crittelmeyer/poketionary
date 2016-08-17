@@ -1,28 +1,29 @@
 <!doctype html>
-<html lang="">
+<html>
   <head>
     <title></title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
-    <div id="body" class="hide">
-      <div class="container">
-        <div class="logo">
+    <div id="loading">loading...</div>
+
+    <div id="search-container" class="hide">
+      <div id="container">
+        <div id="logo">
           <img src="img/pikachu.jpeg" alt="logo" height="50" width="50" />
-          <h1 class="product-name">Poketionary</h1>
+          <h1 id="product-name">Poketionary</h1>
         </div>
-        <div class="search">
+        <div id="search">
           <div><input id="keyword" type="text" placeholder="Pikachu" autocomplete="off" /></div>
           <div><button id="go">Go</button></div>
         </div>
       </div>
 
-      <ul class="content hide"></ul>
-    </div>
+      <ul id="list" class="hide"></ul>
 
-    <div id="loading">loading...</div>
+      <div id="details" class="hide"></div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
